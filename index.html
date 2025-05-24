@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Object and their properties.</h2>
+    <p>There are two different ways to access properties. those are either .property or ["property"]</p>
+    <p id="demo"></p>
+    <script>
+        var person={name:"Prateeksha",age:30};
+        document.getElementById("demo").innerHTML=person.name+" and I am "+ person["age"]+" years old.";
+    </script>
+    <h2>JavaScript Math Objects</h2>
+    <script>
+        var value = Math.abs(-20.2);
+        document.write("Demo test value: " + value + "<br>");
+        var value = Math.acos(-1);
+        document.write("Demo test value: " + value + "<br>");
+        var value = Math.asin(1);
+        document.write("Demo test value: " + value + "<br>");
+        var value = Math.atan(0.5);
+        document.write("Demo test value: " + value + "<br>");
+        var value = Math.random();
+        document.write("Demo test value: " + value + "<br>");
+        var value = Math.ceil(43.7);
+            document.write("Demo test value: " + value + "<br>");
+        var value = Math.floor(30.9);
+            document.write("Demo test value: " + value + "<br>");
+        var value = Math.PI;
+            document.write("Demo test value: " + value + "<br>");
+        var value = Math.E;
+                document.write("Demo test value: " + value + "<br>");
+
+    </script>
+    <p>Find the largest number with the help of Arguments Objects.</p>
+    <p id="result"></p>
+    <script>
+        function findmax(){
+            var i,max=0;
+            for(i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML=findmax(4,5,6,18,-21,17);
+    </script>
+    
+</body>
+</html>
